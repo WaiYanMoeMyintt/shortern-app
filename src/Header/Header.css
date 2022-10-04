@@ -1,0 +1,182 @@
+.header-container{
+    padding: var(--body-padding);
+}
+.header-container .header-brand-mobile .mobile{
+    max-width: 18rem;
+}
+.header-container .header-brand-mobile .desktop{
+   display: none;
+}
+.header-container .header-message h2{
+     font-size: 1.6rem;
+     font-family: 'Poppins', sans-serif;
+     opacity: .9;
+     padding: 0 .5rem;
+}
+.header-container .header-free{
+    background-color: var(--primary-color);
+    padding: 1rem 4rem;
+    border-radius: .4rem;
+}
+.header-container .header-quote{
+    color: var(--primary-color);
+}
+.header-container .header-free:hover{
+    background-color: rgb(43, 83, 184);
+}
+
+@media only screen and (max-width:2100px){
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .header-container .header-brand-mobile .mobile{
+        max-width: 25rem;
+    }
+    .header-container .header-message h2{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        opacity: .9;
+        padding: 0 .5rem;
+   }
+}
+
+@media only screen and (max-width:1800px){
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .header-container .header-brand-mobile .mobile{
+        max-width: 25rem;
+    }
+    .header-container .header-message h2{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        opacity: .9;
+        padding: 0 .5rem;
+   }
+}
+
+@media only screen and (max-width:1600px){
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .header-container .header-brand-mobile .mobile{
+        max-width: 25rem;
+    }
+    .header-container .header-message h2{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        opacity: .9;
+        padding: 0 .5rem;
+   }
+}
+@media only screen and (max-width:1400px){
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .header-container .header-brand-mobile .mobile{
+        max-width: 25rem;
+    }
+    .header-container .header-message h2{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        opacity: .9;
+        padding: 0 .5rem;
+   }
+}
+
+
+@media only screen and (max-width:1200px){
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .header-container .header-brand-mobile .mobile{
+        max-width: 25rem;
+    }
+    .header-container .header-message h2{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        opacity: .9;
+        padding: 0 .5rem;
+   }
+}
+
+@media only screen and (max-width:1024px){
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .header-container .header-brand-mobile .mobile{
+        max-width: 25rem;
+    }
+    .header-container .header-message h2{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        opacity: .9;
+        padding: 0 .5rem;
+   }
+}
+
+@media only screen and (max-width:991px) {
+    .header-container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .header-container .header-brand-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .header-brand-mobile .mobile{
+         max-width: 25rem;
+     }
+     .header-container .header-message h2{
+        text-align: center;
+   }
+}
+
+@media only screen and (max-width:768px) {
+    .header-container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .header-container .header-brand-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .header-brand-mobile .mobile{
+         max-width: 25rem;
+     }
+     .header-container .header-message h2{
+        text-align: center;
+   }
+}
+
+@media only screen and (max-width:425px) {
+    .header-container{
+       display: flex;
+       justify-content: center;
+    }
+    .header-container .header-brand-mobile .mobile{
+        max-width: 18rem;
+    }
+}
+@media only screen and (max-width:375px) {
+    .header-container{
+       transform: translateX(.5rem);
+    }
+}
+
