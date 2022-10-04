@@ -1,0 +1,76 @@
+.company-container .company-title h1{
+    font-size: 1.8rem;
+    color: #252628;
+}
+.company-container .company-logo .brand-1 img,
+.company-container .company-logo .brand-2 img
+{
+    max-width: 130px;
+    display: block;
+    height: auto;
+}
+
+@media only screen and (max-width:2100px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:1800px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (max-width:1800px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (max-width:1600px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:1400px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width:1200px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .company-container .company-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+}
