@@ -1,0 +1,637 @@
+.nav-controller .nav-content {
+    display: none;
+}
+.nav-container .nav-1{
+   padding: var(--body-padding);
+   box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+   z-index: 999;
+   background-color: #fff;
+}
+.nav-container .nav-2 .nav-menu-1{
+    padding: var(--body-padding);
+    transform: translateY(-1.2rem);
+}
+.nav-container .nav-2{
+    z-index: 9999;
+    background-color:#fff;
+    transform: translateY(-.80rem);
+}
+.nav-container .nav-2.show-nav-menu{
+    display: block;
+}
+.nav-2 .nav-menu-1 .nav-drop-1,
+.nav-2 .nav-menu-1 .nav-drop-2,
+.nav-2 .nav-menu-1 .nav-drop-3,
+.nav-2 .nav-menu-1 .nav-drop-4 
+{
+    box-shadow: 0px .4px 2px 0px rgba(160, 160, 160, 0.75);
+    padding:.5rem 1rem;
+}
+.nav-2 .nav-menu-1 .nav-drop-1 .menu-item1 .menu-data1,
+.nav-2 .nav-menu-1 .nav-drop-2 .menu-item2 .menu-data2,
+.nav-2 .nav-menu-1 .nav-drop-3 .menu-item3 .menu-data3,
+.nav-2 .nav-menu-1 .nav-drop-4 .menu-item4 .menu-data4
+{
+    transform: translateY(1.4rem);
+    padding: 0 .5rem;
+    display: none;
+    transition: all 1s ease;
+}
+.nav-2 .nav-menu-1 .nav-drop-1 .menu-item1 .menu-data1.show-drop1,
+.nav-2 .nav-menu-1 .nav-drop-2 .menu-item2 .menu-data2.show-drop2,
+.nav-2 .nav-menu-1 .nav-drop-4 .menu-item4 .menu-data4.show-drop4
+{
+    display: flex;
+    transform: translateY(0rem);
+    transition: all 1s ease;
+}
+
+.menu-item1 h2:active,
+.menu-item2 h2:active,
+.menu-item3 h2:active,
+.menu-item4 h2:active,
+.nav-2 .nav-menu-1 .nav-drop-1 .menu-item1 .menu-data1 .menu-message h3:active,
+.nav-2 .nav-menu-1 .nav-drop-2 .menu-item2 .menu-data2 .menu-message h3:active,
+.nav-2 .nav-menu-1 .nav-drop-4 .menu-item4 .menu-data4 .menu-message h3:active
+{
+    color: var(--primary-color);
+    transition: all 200ms ease;
+}
+.nav-2 .nav-menu-1 .nav-drop-1 .menu-item1 .menu-data1 .menu-message p,
+.nav-2 .nav-menu-1 .nav-drop-2 .menu-item2 .menu-data2 .menu-message p,
+.nav-2 .nav-menu-1 .nav-drop-4 .menu-item4 .menu-data4 .menu-message p
+{
+    font-size: .9rem;
+    color: grey;
+    padding: .2rem 0;
+}
+.nav-2 .nav-menu-2{
+    background-color: var(--url-primary-color);
+    padding: 1.3rem 0;
+    transform: translateY(3.2rem);
+}
+.nav-menu-2 .quote button{
+    background-color: var(--primary-color);
+    padding: .5rem 6rem;
+    border-radius: .4rem;
+}
+.quote button:hover{
+    background-color: rgb(43, 83, 184);
+}
+
+@media only screen and (max-width:1600px){
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--body-padding);
+        box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+        z-index: 999;
+        background-color: #fff;
+    }
+    .nav-content .nav-content-1{
+        display: flex;
+        gap:4rem;
+    }
+    .nav-content-1 ul {
+        display: flex;
+        gap:2rem;
+    }
+    .nav-content-1 ul li {
+        position: relative;
+    }
+    .nav-content-1 ul li a{
+        color: #252628;
+        transition: all 500ms ease;
+    }
+    .nav-content-1 ul li a:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-1 ul li:hover::after{
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color:var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        top: 1.8rem;
+        right: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    .nav-content .nav-content-2{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .nav-content-2,.nav-content-1{
+    }
+    .nav-content-2 .a-login button{
+        font-size: .9rem;
+        color: #252628;
+    }
+    .a-login button:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-signup button{
+        font-size: .9rem;
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-quote button {
+        background-color: var(--primary-color);
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        font-size: .9rem;
+        transition: all 500ms ease;
+    }
+    .a-quote button:hover{
+        background-color: rgb(42, 91, 214);
+    }
+}
+
+
+@media only screen and (max-width:2100px){
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--body-padding);
+        box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+        z-index: 999;
+        background-color: #fff;
+    }
+    .nav-content .nav-content-1{
+        display: flex;
+        gap:4rem;
+    }
+    .nav-content-1 ul {
+        display: flex;
+        gap:2rem;
+    }
+    .nav-content-1 ul li {
+        position: relative;
+    }
+    .nav-content-1 ul li a{
+        color: #252628;
+        transition: all 500ms ease;
+    }
+    .nav-content-1 ul li a:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-1 ul li:hover::after{
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color:var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        top: 1.8rem;
+        right: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    .nav-content .nav-content-2{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .nav-content-2,.nav-content-1{
+    }
+    .nav-content-2 .a-login button{
+        font-size: .9rem;
+        color: #252628;
+    }
+    .a-login button:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-signup button{
+        font-size: .9rem;
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-quote button {
+        background-color: var(--primary-color);
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        font-size: .9rem;
+        transition: all 500ms ease;
+    }
+    .a-quote button:hover{
+        background-color: rgb(42, 91, 214);
+    }
+}
+
+@media only screen and (max-width:1800px){
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--body-padding);
+        box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+        z-index: 999;
+        background-color: #fff;
+    }
+    .nav-content .nav-content-1{
+        display: flex;
+        gap:4rem;
+    }
+    .nav-content-1 ul {
+        display: flex;
+        gap:2rem;
+    }
+    .nav-content-1 ul li {
+        position: relative;
+    }
+    .nav-content-1 ul li a{
+        color: #252628;
+        transition: all 500ms ease;
+    }
+    .nav-content-1 ul li a:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-1 ul li:hover::after{
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color:var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        top: 1.8rem;
+        right: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    .nav-content .nav-content-2{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .nav-content-2,.nav-content-1{
+    }
+    .nav-content-2 .a-login button{
+        font-size: .9rem;
+        color: #252628;
+    }
+    .a-login button:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-signup button{
+        font-size: .9rem;
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-quote button {
+        background-color: var(--primary-color);
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        font-size: .9rem;
+        transition: all 500ms ease;
+    }
+    .a-quote button:hover{
+        background-color: rgb(42, 91, 214);
+    }
+}
+
+@media only screen and (max-width:1600px){
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--body-padding);
+        box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+        z-index: 999;
+        background-color: #fff;
+    }
+    .nav-content .nav-content-1{
+        display: flex;
+        gap:4rem;
+    }
+    .nav-content-1 ul {
+        display: flex;
+        gap:2rem;
+    }
+    .nav-content-1 ul li {
+        position: relative;
+    }
+    .nav-content-1 ul li a{
+        color: #252628;
+        transition: all 500ms ease;
+    }
+    .nav-content-1 ul li a:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-1 ul li:hover::after{
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color:var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        top: 1.8rem;
+        right: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    .nav-content .nav-content-2{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .nav-content-2,.nav-content-1{
+    }
+    .nav-content-2 .a-login button{
+        font-size: .9rem;
+        color: #252628;
+    }
+    .a-login button:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-signup button{
+        font-size: .9rem;
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-quote button {
+        background-color: var(--primary-color);
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        font-size: .9rem;
+        transition: all 500ms ease;
+    }
+    .a-quote button:hover{
+        background-color: rgb(42, 91, 214);
+    }
+}
+
+
+@media only screen and (max-width:1400px){
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--body-padding);
+        box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+        z-index: 999;
+        background-color: #fff;
+    }
+    .nav-content .nav-content-1{
+        display: flex;
+        gap:4rem;
+    }
+    .nav-content-1 ul {
+        display: flex;
+        gap:2rem;
+    }
+    .nav-content-1 ul li {
+        position: relative;
+    }
+    .nav-content-1 ul li a{
+        color: #252628;
+        transition: all 500ms ease;
+    }
+    .nav-content-1 ul li a:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-1 ul li:hover::after{
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color:var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        top: 1.8rem;
+        right: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    .nav-content .nav-content-2{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .nav-content-2,.nav-content-1{
+    }
+    .nav-content-2 .a-login button{
+        font-size: .9rem;
+        color: #252628;
+    }
+    .a-login button:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-signup button{
+        font-size: .9rem;
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-quote button {
+        background-color: var(--primary-color);
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        font-size: .9rem;
+        transition: all 500ms ease;
+    }
+    .a-quote button:hover{
+        background-color: rgb(42, 91, 214);
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--body-padding);
+        box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+        z-index: 999;
+        background-color: #fff;
+    }
+    .nav-content .nav-content-1{
+        display: flex;
+        gap:4rem;
+    }
+    .nav-content-1 ul {
+        display: flex;
+        gap:2rem;
+    }
+    .nav-content-1 ul li {
+        position: relative;
+    }
+    .nav-content-1 ul li a{
+        color: #252628;
+        transition: all 500ms ease;
+    }
+    .nav-content-1 ul li a:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-1 ul li:hover::after{
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color:var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        top: 1.8rem;
+        right: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    .nav-content .nav-content-2{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .nav-content-2,.nav-content-1{
+    }
+    .nav-content-2 .a-login button{
+        font-size: .9rem;
+        color: #252628;
+    }
+    .a-login button:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-signup button{
+        font-size: .9rem;
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-quote button {
+        background-color: var(--primary-color);
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        font-size: .9rem;
+        transition: all 500ms ease;
+    }
+    .a-quote button:hover{
+        background-color: rgb(42, 91, 214);
+    }
+}
+
+
+
+@media only screen and (max-width:1024px) {
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--body-padding);
+        box-shadow: 0px 1px 3px 0px rgba(160, 160, 160, 0.75);
+        z-index: 999;
+        background-color: #fff;
+    }
+    .nav-content .nav-content-1{
+        display: flex;
+        gap:4rem;
+    }
+    .nav-content-1 ul {
+        display: flex;
+        gap:2rem;
+    }
+    .nav-content-1 ul li {
+        position: relative;
+    }
+    .nav-content-1 ul li a{
+        color: #252628;
+        transition: all 500ms ease;
+    }
+    .nav-content-1 ul li a:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-1 ul li:hover::after{
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color:var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        top: 1.8rem;
+        right: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    .nav-content .nav-content-2{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .nav-content-2,.nav-content-1{
+    }
+    .nav-content-2 .a-login button{
+        font-size: .9rem;
+        color: #252628;
+    }
+    .a-login button:hover{
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-signup button{
+        font-size: .9rem;
+        color: var(--primary-color);
+    }
+    .nav-content-2 .a-quote button {
+        background-color: var(--primary-color);
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        font-size: .9rem;
+        transition: all 500ms ease;
+    }
+    .a-quote button:hover{
+        background-color: rgb(42, 91, 214);
+    }
+    
+}
+
+@media only screen and (max-width:991px){
+    .nav-controller .nav-container{
+        display: none;
+    }
+    .nav-controller .nav-container{
+        display: flex;
+    }
+    .nav-controller .nav-content {
+        display: none;
+    }
+    .nav-2 .nav-menu-2{
+        background-color: var(--url-primary-color);
+    }
+ }
+
+@media only screen and (max-width:768px){
+    .nav-controller .nav-container{
+        display: flex;
+    }
+    .nav-controller .nav-content {
+        display: none;
+    }
+    .nav-2 .nav-menu-2{
+        background-color: var(--url-primary-color);
+    }
+ }
+@media only screen and (max-width:375px){
+    .nav-controller .nav-container{
+        display: flex;
+    }
+    .nav-controller .nav-content {
+        display: none;
+    }
+   .nav-container .nav-2 .nav-menu-1{
+    transform: translateY(-1rem);
+   }
+   .nav-2 .nav-menu-2{
+    background-color: var(--url-primary-color);
+}
+}
