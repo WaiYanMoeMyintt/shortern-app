@@ -1,0 +1,81 @@
+.short-url-container{
+    background-color: var( --url-primary-color);
+    height:560px;
+}
+.short-url-container .short-url-input {
+    padding: 1.5rem 1rem;
+}
+.short-url-input input{
+    padding: 1rem 2.8rem;
+    border-radius: .6rem;
+    width: 18.125rem;
+}
+.short-url-input input::placeholder{
+      color:rgb(112, 112, 112);
+}
+.short-url-input input:focus{
+    outline: 2px solid blue;
+}
+.short-url-input button{
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    transform: translateY(2rem);
+    padding: 1rem 7rem;
+    border-radius: .6rem;
+}
+.short-url-container .valid-url{
+    padding: 1.5rem 1rem;
+}
+.valid-url .valid-string{
+    opacity: 0;
+    transition: all 800ms ease;
+}
+.valid-url .valid-string.valid{
+    opacity: 1;
+}
+.valid-url .valid-string{
+    background-color: rgb(200, 50, 80);
+    margin: 1rem 0;
+    transition: all 800ms ease;
+}
+.short-url-container .short-url-data{
+    padding: 1.5rem 1rem;
+    transform: translateY(3rem);
+}
+.short-url-data .short-url{
+    background-color:#fff;
+    transform: translateY(-6rem);
+    transition: all 600ms ease;
+}
+.short-url .short-url-link a {
+    color:rgb(42,91,215);
+}
+.short-url .full-url-link p {
+   color:rgb(110, 108, 108);
+   font-size: .8rem;
+}
+.short-url .copy-button button {
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    transform: translateY(2rem);
+    padding: 1rem 7rem;
+}
+.copy-button button:focus{
+    background-color: rgb(165, 231, 66);
+}
+@media only screen and (max-width:991px){
+    .short-url .short-url-link a {
+        font-size: 1.2rem;
+    }
+    .short-url .full-url-link p {
+        font-size: .9rem;
+     }
+}
+@media only screen and (max-width:768px){
+    .short-url .short-url-link a {
+        font-size: 1.2rem;
+    }
+    .short-url .full-url-link p {
+        font-size: .9rem;
+     }
+}
