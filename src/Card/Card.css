@@ -1,0 +1,72 @@
+.card-content .card-title h1{
+    font-size: 1.6rem;
+    opacity: .9;
+    padding: 0 .5rem;
+}
+.card-content .card-message p{
+    color: rgb(124, 120, 120);
+    letter-spacing: .4px;
+}
+.card-container {
+    padding: var(--body-padding);
+}
+.card-container .card-grip{
+    height: 42rem;
+    border: 1.5px solid #000000;
+}
+.card-grip .card-title h3{
+  font-size: 1.2rem;
+  color: #1d1f21;
+}
+.card-grip .card-sub-title p {
+    font-size: .9rem;
+    color: rgb(124, 120, 120);
+    letter-spacing: .4px;
+}
+.card-grip .card-features .card-feature-title{
+    color: #1d1f21;
+}
+.card-features li span {
+    margin: 0 .5rem;
+    color: rgb(59, 59, 59);
+    font-size: .9rem;
+}
+.card-grip .card-button .free {
+    background-color:rgb(42,91,215);
+    padding: .6rem 2.8rem;
+}
+.card-button .learn {
+    color:rgb(42,91,215);
+}
+
+@media only screen and (max-width:1200px){
+    .card-container .card-grip{
+        height: 42rem;
+        width: 70rem;
+        border: 1.5px solid #000000;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .card-container .card-grip{
+        height: 42rem;
+        width: 60rem;
+        border: 1.5px solid #000000;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .card-container .card-grip{
+        height: 42rem;
+        width: 60rem;
+        border: 1.5px solid #000000;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .card-container .card-grip{
+        height: 42rem;
+        width: 45rem;
+        border: 1.5px solid #000000;
+    }
+}
